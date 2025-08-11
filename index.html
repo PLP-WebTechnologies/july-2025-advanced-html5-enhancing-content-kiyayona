@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Section Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Showcase Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="lists">
+            <h2>Section 1: Lists</h2>
+            <!-- Lists will go here -->
+        </section>
+
+        <section id="tables">
+            <h2>Section 2: Tables</h2>
+            <!-- Tables will go here -->
+        </section>
+
+        <section id="media">
+            <h2>Section 3: Media</h2>
+            <!-- Media will go here -->
+        </section>
+
+        <section id="form">
+            <h2>Section 4: HTML5 Form</h2>
+            <!-- Form will go here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Multi-Section Web Page Showcase</p>
+    </footer>
+</body>
+</html>
+
+
+            <h3>Unordered List (Shopping List)</h3>
+            <ul>
+                <li>Apples</li>
+                <li>Bananas</li>
+                <li>Milk</li>
+                <li>Bread</li>
+                <li>Eggs</li>
+            </ul>
+
+            <h3>Ordered List (Top 3 Favorite Books)</h3>
+            <ol>
+                <li>The Hitchhiker's Guide to the Galaxy</li>
+                <li>1984</li>
+                <li>To Kill a Mockingbird</li>
+            </ol>
+
+            <h3>Description List (Web Technologies)</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language, the standard markup language for documents designed to be displayed in a web browser.</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets, used for describing the presentation of a document written in a markup language like HTML.</dd>
+                <dt>JavaScript</dt>
+                <dd>A programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.</dd>
+            </dl>
+
+
+            <h3>Simple Data Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>30</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>24</td>
+                        <td>London</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie</td>
+                        <td>35</td>
+                        <td>Paris</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <h3>Image Example</h3>
+            <img src="./upload/search_images/S8193D26zICy.jpg" alt="Placeholder Image" style="max-width: 100%; height: auto;">
+            <p>A placeholder image to demonstrate media embedding.</p>
+
+            <h3>Video Example</h3>
+            <video controls style="max-width: 100%; height: auto;">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>A sample video demonstrating media embedding.</p>
+
+
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="e.g., 123-456-7890">
+                        <small>Format: 123-456-7890</small>
+                    </p>
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </p>
+                    <p>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="18" max="120">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <p>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required pattern="[a-zA-Z0-9]+" title="Only letters and numbers allowed">
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required minlength="8">
+                    </p>
+                    <p>
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required minlength="8">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <p>
+                        <label for="color">Favorite Color:</label>
+                        <input type="color" id="color" name="color">
+                    </p>
+                    <p>
+                        <label for="volume">Volume (0-100):</label>
+                        <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+                    </p>
+                    <p>
+                        <label for="homepage">Homepage URL:</label>
+                        <input type="url" id="homepage" name="homepage" placeholder="https://example.com">
+                    </p>
+                    <p>
+                        <label for="feedback">Feedback:</label>
+                        <textarea id="feedback" name="feedback" rows="5" cols="30"></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                </p>
+
+                <p>
+                    <button type="submit">Submit Form</button>
+                    <button type="reset">Reset Form</button>
+                </p>
+            </form>
+
